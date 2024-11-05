@@ -4,13 +4,13 @@ both insertion and deletion triggers redistribution if possible.
 
 ## Definition
 Definition used in this project is stated as follows:
-- CLRS degree (lower bound) d <= # of key in a node <= 2d
+- Knuth Order (upper bound) ceil(k/2) <= # of node <= k
 - Fill factor: 0.5
 - Insertion overflow
   - rotate to left
   - failed
     - rotate to right
-    - rotate to right failed
+    - failed
       - split -> merge into parent
 - Deletion underflow 
   - borrow from left sibling
@@ -60,7 +60,7 @@ options:
 Dereklee0310@gmail.com
 
 ## Acknowledgments
-* Damon, lecturer of CCU DBMS 114
+* Damon, lecturer of CCU DBMS 113
 * https://github.com/solangii/b-plus-tree
 * https://gist.github.com/savarin/69acd246302567395f65ad6b97ee503d
 * https://www.youtube.com/watch?v=CYKRMz8yzVU
